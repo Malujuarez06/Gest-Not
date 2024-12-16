@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
       "dev": "vite",
-      "build": "vite build && if not exist public\\dist mkdir public\\dist && xcopy /E /I dist public\\dist",
+      "build": "vite build && mkdir public\\dist && xcopy dist\\* public\\dist /E /I",
       "preview": "vite preview"
     },
     "dependencies": {
